@@ -2,7 +2,7 @@
 
 > **Mission d'exploration avancée des hyperviseurs de type 1 : VMware ESXi, Microsoft Hyper-V, Proxmox VE et XCP-ng**
 
-Documentation complète d'un projet pratique d'installation, configuration, migration et sauvegarde de machines virtuelles dans un environnement de virtualisation imbriquée (nested virtualization). [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/17c49540-02eb-43d3-b722-e89751c827f5/Operation-Nexus-Virtualis.pdf)
+Documentation complète d'un projet pratique d'installation, configuration, migration et sauvegarde de machines virtuelles dans un environnement de virtualisation imbriquée (nested virtualization). 
 
 ***
 
@@ -32,22 +32,21 @@ Documentation complète d'un projet pratique d'installation, configuration, migr
 
 ## 🎯 À propos du projet
 
-**Opération Nexus Virtualis** est un projet pédagogique exhaustif visant à maîtriser les technologies d'hyperviseurs de type 1 (bare metal). Le projet simule un environnement datacenter en utilisant la virtualisation imbriquée (Matryoshka - poupées russes virtuelles). [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/20a13511-a714-49d1-8c6f-6aea04a7c855/Job1.txt)
+**Opération Nexus Virtualis** est un projet pédagogique exhaustif visant à maîtriser les technologies d'hyperviseurs de type 1 (bare metal). Le projet simule un environnement datacenter en utilisant la virtualisation imbriquée (Matryoshka - poupées russes virtuelles).
 
 ### Objectifs principaux
 
-- Comprendre les différences entre hyperviseurs type 1 et type 2 [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/20a13511-a714-49d1-8c6f-6aea04a7c855/Job1.txt)
-- Installer et configurer quatre hyperviseurs majeurs (ESXi, Hyper-V, Proxmox VE, XCP-ng) [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/17c49540-02eb-43d3-b722-e89751c827f5/Operation-Nexus-Virtualis.pdf)
-- Créer et gérer des machines virtuelles Debian sur chaque plateforme [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/17c49540-02eb-43d3-b722-e89751c827f5/Operation-Nexus-Virtualis.pdf)
-- Réaliser des migrations de VMs entre différents hyperviseurs [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/17c49540-02eb-43d3-b722-e89751c827f5/Operation-Nexus-Virtualis.pdf)
-- Mettre en place des stratégies de sauvegarde avec Proxmox Backup Server [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/17c49540-02eb-43d3-b722-e89751c827f5/Operation-Nexus-Virtualis.pdf)
+- Comprendre les différences entre hyperviseurs type 1 et type 2 
+- Installer et configurer quatre hyperviseurs majeurs (ESXi, Hyper-V, Proxmox VE, XCP-ng)
+- Créer et gérer des machines virtuelles Debian sur chaque plateforme
+- Réaliser des migrations de VMs entre différents hyperviseurs 
+- Mettre en place des stratégies de sauvegarde avec Proxmox Backup Server
 
 ### Compétences visées
 
-- Administrer et sécuriser les infrastructures systèmes [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/17c49540-02eb-43d3-b722-e89751c827f5/Operation-Nexus-Virtualis.pdf)
-- Administrer et sécuriser les infrastructures virtualisées [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/17c49540-02eb-43d3-b722-e89751c827f5/Operation-Nexus-Virtualis.pdf)
-- Concevoir une solution technique répondant à des besoins d'évolution de l'infrastructure [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/17c49540-02eb-43d3-b722-e89751c827f5/Operation-Nexus-Virtualis.pdf)
-
+- Administrer et sécuriser les infrastructures systèmes 
+- Administrer et sécuriser les infrastructures virtualisées
+- Concevoir une solution technique répondant à des besoins d'évolution de l'infrastructure
 ***
 
 ## 🔧 Prérequis
@@ -55,11 +54,10 @@ Documentation complète d'un projet pratique d'installation, configuration, migr
 ### Matériel requis
 
 - **PC hôte** : CPU avec support VT-x/AMD-V, 16 Go RAM minimum (32 Go recommandé), 500 Go d'espace disque
-- **Virtualisation imbriquée** activée dans le BIOS [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/a7532822-3ef2-49f0-b72c-4919259e1de8/methode.txt)
-
+- **Virtualisation imbriquée** activée dans le BIOS 
 ### Logiciels nécessaires
 
-- [VMware Workstation Pro](https://www.broadcom.com/) (gratuit pour usage personnel depuis rachat par Broadcom) [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/17c49540-02eb-43d3-b722-e89751c827f5/Operation-Nexus-Virtualis.pdf)
+- [VMware Workstation Pro](https://www.broadcom.com/) (gratuit pour usage personnel depuis rachat par Broadcom) 
 - Images ISO des hyperviseurs (voir [Job 03](#job-03---téléchargement-des-iso))
 
 ***
@@ -92,27 +90,27 @@ Hôte physique (VMware Workstation Pro - Type 2)
 #### Hyperviseur Type 1 vs Type 2
 
 **Type 1 (bare metal)**
-- S'exécute directement sur le matériel physique [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/20a13511-a714-49d1-8c6f-6aea04a7c855/Job1.txt)
-- Exemples : VMware ESXi, Microsoft Hyper-V Server, Xen, KVM [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/20a13511-a714-49d1-8c6f-6aea04a7c855/Job1.txt)
-- Performance élevée avec accès direct au CPU, RAM et E/S [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/20a13511-a714-49d1-8c6f-6aea04a7c855/Job1.txt)
-- Meilleure sécurité et isolation entre VMs [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/20a13511-a714-49d1-8c6f-6aea04a7c855/Job1.txt)
+- S'exécute directement sur le matériel physique
+- Exemples : VMware ESXi, Microsoft Hyper-V Server, Xen, KVM
+- Performance élevée avec accès direct au CPU, RAM et E/S
+- Meilleure sécurité et isolation entre VMs
 
 **Type 2 (hosted)**
-- Fonctionne comme application sur un OS hôte [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/20a13511-a714-49d1-8c6f-6aea04a7c855/Job1.txt)
-- Exemples : VirtualBox, VMware Workstation, Parallels Desktop [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/20a13511-a714-49d1-8c6f-6aea04a7c855/Job1.txt)
-- Plus simple à installer et configurer [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/20a13511-a714-49d1-8c6f-6aea04a7c855/Job1.txt)
+- Fonctionne comme application sur un OS hôte 
+- Exemples : VirtualBox, VMware Workstation, Parallels Desktop
+- Plus simple à installer et configurer
 
 #### Avantages du Type 1
 
-- Performances optimales pour environnements datacenter [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/20a13511-a714-49d1-8c6f-6aea04a7c855/Job1.txt)
-- Fonctionnalités entreprise (migration à chaud, haute disponibilité, clustering) [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/20a13511-a714-49d1-8c6f-6aea04a7c855/Job1.txt)
-- Surface d'attaque réduite [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/20a13511-a714-49d1-8c6f-6aea04a7c855/Job1.txt)
+- Performances optimales pour environnements datacenter
+- Fonctionnalités entreprise (migration à chaud, haute disponibilité, clustering)
+- Surface d'attaque réduite
 
 #### Cas d'usage
 
-- Datacenters et consolidation de serveurs [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/20a13511-a714-49d1-8c6f-6aea04a7c855/Job1.txt)
-- Cloud privé/public (IaaS) [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/20a13511-a714-49d1-8c6f-6aea04a7c855/Job1.txt)
-- Virtualisation de postes de travail (VDI) [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/20a13511-a714-49d1-8c6f-6aea04a7c855/Job1.txt)
+- Datacenters et consolidation de serveurs
+- Cloud privé/public (IaaS)
+- Virtualisation de postes de travail (VDI)
 
 📖 [Documentation complète Job 01](docs/job01-concepts.md)
 
@@ -120,9 +118,7 @@ Hôte physique (VMware Workstation Pro - Type 2)
 
 ### Job 02 - Installation VMware Workstation Pro
 
-VMware Workstation Pro est désormais **gratuit pour usage personnel** depuis le rachat par Broadcom. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/17c49540-02eb-43d3-b722-e89751c827f5/Operation-Nexus-Virtualis.pdf)
-
-**Étapes d'installation**
+VMware Workstation Pro est désormais **gratuit pour usage personnel** depuis le rachat par Broadcom.
 
 1. Téléchargement depuis [Broadcom](https://www.broadcom.com/)
 2. Installation standard avec assistant
@@ -136,28 +132,28 @@ VMware Workstation Pro est désormais **gratuit pour usage personnel** depuis le
 
 #### ESXi (VMware vSphere Hypervisor)
 
-- Portail : [support.broadcom.com](https://support.broadcom.com) → My Downloads → vSphere → ESXi [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/949aad75-8196-48cf-8227-b51966cb5cef/liens.txt)
-- Versions disponibles : 8.0, 9.0 [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/949aad75-8196-48cf-8227-b51966cb5cef/liens.txt)
-- ⚠️ Vérifier [prérequis matériels](https://kb.vmware.com/s/article/2107518) avant téléchargement [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/949aad75-8196-48cf-8227-b51966cb5cef/liens.txt)
+- Portail : [support.broadcom.com](https://support.broadcom.com) → My Downloads → vSphere → ESXi
+- Versions disponibles : 8.0, 9.0
+- ⚠️ Vérifier [prérequis matériels](https://kb.vmware.com/s/article/2107518) avant téléchargement
 
 #### Hyper-V Server
 
-- Version standalone gratuite : Hyper-V Server 2019 [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/949aad75-8196-48cf-8227-b51966cb5cef/liens.txt)
-- Lien direct ISO : [Microsoft Evaluation Center](https://www.microsoft.com/fr-fr/evalcenter/download-hyper-v-server-2019) [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/949aad75-8196-48cf-8227-b51966cb5cef/liens.txt)
+- Version standalone gratuite : Hyper-V Server 2019
+- Lien direct ISO : [Microsoft Evaluation Center](https://www.microsoft.com/fr-fr/evalcenter/download-hyper-v-server-2019)
 
 #### Proxmox VE
 
-- Page officielle : [proxmox.com/downloads](https://www.proxmox.com/en/downloads/proxmox-virtual-environment/iso) [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/949aad75-8196-48cf-8227-b51966cb5cef/liens.txt)
-- Dernière version : 9.1 ou 8.4 [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/949aad75-8196-48cf-8227-b51966cb5cef/liens.txt)
+- Page officielle : [proxmox.com/downloads](https://www.proxmox.com/en/downloads/proxmox-virtual-environment/iso)
+- Dernière version : 9.1 ou 8.4
 
 #### XCP-ng
 
-- Site officiel : [xcp-ng.org](https://xcp-ng.org) [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/949aad75-8196-48cf-8227-b51966cb5cef/liens.txt)
-- ISO 8.3 LTS : [mirrors.xcp-ng.org](https://mirrors.xcp-ng.org/isos/8.3/xcp-ng-8.3.0-20250606.iso) [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/949aad75-8196-48cf-8227-b51966cb5cef/liens.txt)
+- Site officiel : [xcp-ng.org](https://xcp-ng.org)
+- ISO 8.3 LTS : [mirrors.xcp-ng.org](https://mirrors.xcp-ng.org/isos/8.3/xcp-ng-8.3.0-20250606.iso)
 
 **Bonnes pratiques**
-- Vérifier les checksums SHA256 après téléchargement [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/949aad75-8196-48cf-8227-b51966cb5cef/liens.txt)
-- Tester en environnement nested virtualization avant production [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/949aad75-8196-48cf-8227-b51966cb5cef/liens.txt)
+- Vérifier les checksums SHA256 après téléchargement
+- Tester en environnement nested virtualization avant production
 
 📖 [Liste complète des liens et versions](docs/job03-iso-download.md)
 
@@ -167,10 +163,9 @@ VMware Workstation Pro est désormais **gratuit pour usage personnel** depuis le
 
 #### Spécifications VM serveur
 
-- **Processeur** : 2 x 2 cœurs avec virtualisation exposée [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/a7532822-3ef2-49f0-b72c-4919259e1de8/methode.txt)
-- **RAM** : 16 Go [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/67e70260-c6ad-433a-b6ea-1c78185e0c84/explication.txt)
-- **Stockage** : 30 Go principal + 60 Go secondaire pour ISO [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/67e70260-c6ad-433a-b6ea-1c78185e0c84/explication.txt)
-
+- **Processeur** : 2 x 2 cœurs avec virtualisation exposée
+- **RAM** : 16 Go
+- **Stockage** : 30 Go principal + 60 Go secondaire pour ISO
 #### Installation Hyper-V
 
 ```powershell
@@ -186,18 +181,17 @@ New-VMSwitch -Name "NATSwitch" -SwitchType Internal
 
 #### Création VM Debian 13
 
-1. **Action > Nouveau > Ordinateur virtuel** dans Hyper-V Manager [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/a7532822-3ef2-49f0-b72c-4919259e1de8/methode.txt)
-2. Nom : `Debian13`, Génération : **2** [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/a7532822-3ef2-49f0-b72c-4919259e1de8/methode.txt)
-3. Mémoire : 1024 Mo, Réseau : NATSwitch [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/a7532822-3ef2-49f0-b72c-4919259e1de8/methode.txt)
-4. Disque : Nouveau VHDX 8 Go [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/a7532822-3ef2-49f0-b72c-4919259e1de8/methode.txt)
-5. Paramètres processeur : 2 vCPU + **Expose virtualization extensions** [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/a7532822-3ef2-49f0-b72c-4919259e1de8/methode.txt)
-6. Secure Boot : **Désactivé** (Linux: None) [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/a7532822-3ef2-49f0-b72c-4919259e1de8/methode.txt)
+1. **Action > Nouveau > Ordinateur virtuel** dans Hyper-V Manager 
+2. Nom : `Debian13`, Génération : **2** 
+3. Mémoire : 1024 Mo, Réseau : NATSwitch
+4. Disque : Nouveau VHDX 8 Go 
+5. Paramètres processeur : 2 vCPU + **Expose virtualization extensions** 
+6. Secure Boot : **Désactivé** (Linux: None) 
 
 #### Activation nested virtualization (prérequis VMware)
 
 Dans paramètres VM Windows Server 2022 :  
-**CPU > Expose hardware assisted virtualization** [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/a7532822-3ef2-49f0-b72c-4919259e1de8/methode.txt)
-
+**CPU > Expose hardware assisted virtualization** 
 📖 [Tutoriel complet avec captures](docs/job04-hyperv-installation.md)
 
 ***
@@ -206,27 +200,26 @@ Dans paramètres VM Windows Server 2022 :
 
 #### Spécifications VM serveur
 
-- **Processeur** : 2 x 2 cœurs avec virtualisation activée [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/d15eb0b5-bded-4b38-9397-e26af2a83ca8/methode.txt)
-- **RAM** : 8 Go [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/d15eb0b5-bded-4b38-9397-e26af2a83ca8/methode.txt)
-- **Stockage** : 30 Go principal + 142 Go secondaire [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/d15eb0b5-bded-4b38-9397-e26af2a83ca8/methode.txt)
+- **Processeur** : 2 x 2 cœurs avec virtualisation activée
+- **RAM** : 8 Go 
+- **Stockage** : 30 Go principal + 142 Go secondaire
 
 #### Installation ESXi 8.0
 
-1. Créer VM sur VMware Workstation avec spécifications ci-dessus [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/d15eb0b5-bded-4b38-9397-e26af2a83ca8/methode.txt)
-2. Cocher virtualisation dans paramètres processeur [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/d15eb0b5-bded-4b38-9397-e26af2a83ca8/methode.txt)
-3. ⚠️ **Problème résolu** : Décocher "Plateforme d'ordinateur virtuel" dans fonctionnalités Windows [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/d15eb0b5-bded-4b38-9397-e26af2a83ca8/methode.txt)
-4. Installer ESXi depuis ISO, définir mot de passe root [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/d15eb0b5-bded-4b38-9397-e26af2a83ca8/methode.txt)
-5. Noter l'IP de gestion (ex: `https://192.168.29.131/`) [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/d15eb0b5-bded-4b38-9397-e26af2a83ca8/methode.txt)
+1. Créer VM sur VMware Workstation avec spécifications ci-dessus
+2. Cocher virtualisation dans paramètres processeur
+3. ⚠️ **Problème résolu** : Décocher "Plateforme d'ordinateur virtuel" dans fonctionnalités Windows
+4. Installer ESXi depuis ISO, définir mot de passe root
+5. Noter l'IP de gestion (ex: `https://192.168.29.131/`)
 
 #### Configuration Datastore et VM Debian
 
-1. Accéder interface web ESXi [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/d15eb0b5-bded-4b38-9397-e26af2a83ca8/methode.txt)
-2. **Stockage > Nouvelle banque de données** (associer disque secondaire 142 Go) [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/d15eb0b5-bded-4b38-9397-e26af2a83ca8/methode.txt)
-3. Uploader ISO Debian 13 sur datastore [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/d15eb0b5-bded-4b38-9397-e26af2a83ca8/methode.txt)
-4. **Machine virtuelle > Créer/Enregistrer une machine virtuelle** [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/d15eb0b5-bded-4b38-9397-e26af2a83ca8/methode.txt)
-   - 2 vCPU, 1 Go RAM, 8 Go stockage [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/d15eb0b5-bded-4b38-9397-e26af2a83ca8/methode.txt)
-   - Lecteur DVD : ISO Debian depuis datastore [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/d15eb0b5-bded-4b38-9397-e26af2a83ca8/methode.txt)
-
+1. Accéder interface web ESXi
+2. **Stockage > Nouvelle banque de données** (associer disque secondaire 142 Go)
+3. Uploader ISO Debian 13 sur datastore
+4. **Machine virtuelle > Créer/Enregistrer une machine virtuelle**
+   - 2 vCPU, 1 Go RAM, 8 Go stockage
+   - Lecteur DVD : ISO Debian depuis datastore
 📖 [Guide pas à pas Job 05](docs/job05-esxi-installation.md)
 
 ***
@@ -235,22 +228,22 @@ Dans paramètres VM Windows Server 2022 :
 
 #### Spécifications VM serveur
 
-- **Processeur** : 2 x 2 cœurs [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/67e70260-c6ad-433a-b6ea-1c78185e0c84/explication.txt)
-- **RAM** : 16 Go [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/67e70260-c6ad-433a-b6ea-1c78185e0c84/explication.txt)
-- **Stockage** : 30 Go principal + 60 Go secondaire pour ISO Debian [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/67e70260-c6ad-433a-b6ea-1c78185e0c84/explication.txt)
+- **Processeur** : 2 x 2 cœurs
+- **RAM** : 16 Go
+- **Stockage** : 30 Go principal + 60 Go secondaire pour ISO Debian
 
 #### Création VM Debian
 
-Spécifications VM fille: [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/67e70260-c6ad-433a-b6ea-1c78185e0c84/explication.txt)
+Spécifications VM fille:
 - Processeur : 2 x 2 cœurs
 - RAM : 1 Go
 - Stockage : 8 Go
 
 **Installation**
-1. Créer VM Proxmox sur VMware Workstation [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/67e70260-c6ad-433a-b6ea-1c78185e0c84/explication.txt)
-2. Installer Proxmox VE depuis ISO [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/67e70260-c6ad-433a-b6ea-1c78185e0c84/explication.txt)
-3. Se connecter à l'interface web avec identifiants [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/67e70260-c6ad-433a-b6ea-1c78185e0c84/explication.txt)
-4. Créer VM Debian avec specs ci-dessus [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/67e70260-c6ad-433a-b6ea-1c78185e0c84/explication.txt)
+1. Créer VM Proxmox sur VMware Workstation
+2. Installer Proxmox VE depuis ISO
+3. Se connecter à l'interface web avec identifiants
+4. Créer VM Debian avec specs ci-dessus
 
 📖 [Documentation complète Job 06](docs/job06-proxmox-installation.md)
 
@@ -260,20 +253,19 @@ Spécifications VM fille: [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-
 
 #### Spécifications VM serveur
 
-Dimensionnement similaire aux autres hyperviseurs: [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/17c49540-02eb-43d3-b722-e89751c827f5/Operation-Nexus-Virtualis.pdf)
-- **Processeur** : 2 x 2 cœurs
+Dimensionnement similaire aux autres hyperviseurs:
 - **RAM** : 16 Go
 - **Stockage** : 60+ Go (extension nécessaire pour XOA)
 
 #### Création VM Debian
 
-- Processeur : 2 x 2 cœurs [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/17c49540-02eb-43d3-b722-e89751c827f5/Operation-Nexus-Virtualis.pdf)
-- RAM : 1 Go [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/17c49540-02eb-43d3-b722-e89751c827f5/Operation-Nexus-Virtualis.pdf)
-- Stockage : 8 Go [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/17c49540-02eb-43d3-b722-e89751c827f5/Operation-Nexus-Virtualis.pdf)
+- Processeur : 2 x 2 cœurs
+- RAM : 1 Go
+- Stockage : 8 Go
 
 #### Problème résolu : Extension stockage XCP-ng
 
-**Contexte** : VM XCP-ng sur VMware avec 50 Go disque → Local storage = 15-18 Go → **Erreur "SR_BACKEND_FAILURE_44 Insufficient space"** lors déploiement XOA. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/dcb301b9-afd0-4359-8923-883ebedfab70/extension-stockage.txt)
+**Contexte** : VM XCP-ng sur VMware avec 50 Go disque → Local storage = 15-18 Go → **Erreur "SR_BACKEND_FAILURE_44 Insufficient space"** lors déploiement XOA.
 
 **Solution : Script automatique**
 
@@ -314,7 +306,7 @@ bash -c "$(wget -qO- https://xoa.io/deploy)"
 
 #### Combinaisons testées
 
-Migrations réalisées: [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/17c49540-02eb-43d3-b722-e89751c827f5/Operation-Nexus-Virtualis.pdf)
+Migrations réalisées:
 - Hyper-V → ESXi → Proxmox → XCP-ng
 - Proxmox → ESXi
 - ESXi → Hyper-V
@@ -333,9 +325,9 @@ Migrations réalisées: [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-up
 
 #### Configuration sauvegarde automatique
 
-- **Fréquence** : Toutes les 2 heures [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/17c49540-02eb-43d3-b722-e89751c827f5/Operation-Nexus-Virtualis.pdf)
-- **Rétention** : Conserver uniquement les 3 dernières sauvegardes [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/17c49540-02eb-43d3-b722-e89751c827f5/Operation-Nexus-Virtualis.pdf)
-- **Cible** : VM Debian sur Proxmox VE [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/17c49540-02eb-43d3-b722-e89751c827f5/Operation-Nexus-Virtualis.pdf)
+- **Fréquence** : Toutes les 2 heures
+- **Rétention** : Conserver uniquement les 3 dernières sauvegardes
+- **Cible** : VM Debian sur Proxmox VE
 
 **Étapes**
 1. Installer Proxmox Backup Server (VM dédiée ou conteneur)
@@ -375,22 +367,22 @@ Migrations réalisées: [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-up
 ### 1. VMware Workstation - Virtualisation imbriquée
 
 **Problème** : VM ne démarre pas après activation nested virtualization  
-**Solution** : Décocher "Plateforme d'ordinateur virtuel" dans fonctionnalités Windows [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/d15eb0b5-bded-4b38-9397-e26af2a83ca8/methode.txt)
+**Solution** : Décocher "Plateforme d'ordinateur virtuel" dans fonctionnalités Windows
 
 ### 2. XCP-ng - Espace insuffisant pour XOA
 
-**Problème** : `SR_BACKEND_FAILURE_44 Insufficient space` lors déploiement XOA [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/dcb301b9-afd0-4359-8923-883ebedfab70/extension-stockage.txt)
-**Solution** : Script automatique d'extension Local Storage (voir [Job 07](#job-07---xcp-ng)) [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/dcb301b9-afd0-4359-8923-883ebedfab70/extension-stockage.txt)
+**Problème** : `SR_BACKEND_FAILURE_44 Insufficient space` lors déploiement XOA
+**Solution** : Script automatique d'extension Local Storage (voir [Job 07](#job-07---xcp-ng))
 
 ### 3. Hyper-V - Secure Boot avec Linux
 
 **Problème** : VM Debian ne boot pas  
-**Solution** : Désactiver Secure Boot (paramètre "None" pour Linux) [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/a7532822-3ef2-49f0-b72c-4919259e1de8/methode.txt)
+**Solution** : Désactiver Secure Boot (paramètre "None" pour Linux)
 
 ### 4. ESXi - Compatibilité matérielle
 
 **Problème** : ESXi ne détecte pas le matériel  
-**Solution** : Vérifier [prérequis matériels](https://kb.vmware.com/s/article/2107518) avant installation [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/949aad75-8196-48cf-8227-b51966cb5cef/liens.txt)
+**Solution** : Vérifier [prérequis matériels](https://kb.vmware.com/s/article/2107518) avant installation
 
 📖 [Base de connaissances complète](docs/troubleshooting.md)
 
@@ -398,11 +390,11 @@ Migrations réalisées: [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-up
 
 ## 🎓 Compétences acquises
 
-- ✅ Installation et configuration d'hyperviseurs type 1 en environnement nested [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/17c49540-02eb-43d3-b722-e89751c827f5/Operation-Nexus-Virtualis.pdf)
-- ✅ Gestion des ressources virtuelles (CPU, RAM, stockage, réseau) [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/17c49540-02eb-43d3-b722-e89751c827f5/Operation-Nexus-Virtualis.pdf)
-- ✅ Migration de VMs entre plateformes hétérogènes [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/17c49540-02eb-43d3-b722-e89751c827f5/Operation-Nexus-Virtualis.pdf)
-- ✅ Mise en place de stratégies de sauvegarde automatisées [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/17c49540-02eb-43d3-b722-e89751c827f5/Operation-Nexus-Virtualis.pdf)
-- ✅ Troubleshooting d'infrastructures virtualisées [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/dcb301b9-afd0-4359-8923-883ebedfab70/extension-stockage.txt)
+- ✅ Installation et configuration d'hyperviseurs type 1 en environnement nested
+- ✅ Gestion des ressources virtuelles (CPU, RAM, stockage, réseau)
+- ✅ Migration de VMs entre plateformes hétérogènes
+- ✅ Mise en place de stratégies de sauvegarde automatisées
+- ✅ Troubleshooting d'infrastructures virtualisées 
 - ✅ Documentation technique exhaustive de projets complexes
 
 ***
@@ -424,8 +416,8 @@ Migrations réalisées: [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-up
 
 ### Articles de référence
 
-- [Hyperviseurs Type 1 vs Type 2](https://www.ionos.fr/digitalguide/serveur/know-how/hyperviseurs-de-type-1-et-2/) [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/a7532822-3ef2-49f0-b72c-4919259e1de8/methode.txt)
-- [Nested Virtualization Explained](https://www.nakivo.com/blog/hyper-v-nested-virtualization-explained/) [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/a7532822-3ef2-49f0-b72c-4919259e1de8/methode.txt)
+- [Hyperviseurs Type 1 vs Type 2](https://www.ionos.fr/digitalguide/serveur/know-how/hyperviseurs-de-type-1-et-2/)
+- [Nested Virtualization Explained](https://www.nakivo.com/blog/hyper-v-nested-virtualization-explained/)
 
 ***
 
@@ -439,15 +431,15 @@ Ce projet est sous licence **MIT**. Voir [LICENSE](LICENSE) pour plus d'informat
 
 **Votre Nom**
 
-- GitHub : [@votre-username](https://github.com/votre-username)
-- LinkedIn : [Votre Profil](https://linkedin.com/in/votre-profil)
-- Email : votre.email@example.com
+- GitHub : [@votre-username](https://github.com/samuel-rigaux)
+- LinkedIn : [Votre Profil](https://linkedin.com/in/samuel-rigaux)
+- Email : samuel.rigaux@laplateforme.io
 
 ***
 
 ## ⭐ Remerciements
 
-- **La Plateforme** pour le projet pédagogique [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/17c49540-02eb-43d3-b722-e89751c827f5/Operation-Nexus-Virtualis.pdf)
+- **La Plateforme** pour le projet pédagogique
 - Communautés open source (Proxmox, XCP-ng)
 - Tous les contributeurs et testeurs
 
@@ -465,3 +457,4 @@ Made with ❤️ and ☕ | © 2026
 
 
 Ce README est accompagné d'une documentation détaillée pour chaque job dans le dossier `/docs/`. Consultez les liens ci-dessus pour guides complets, captures d'écran et scripts.
+
