@@ -1,12 +1,4 @@
-Voici un README complet et professionnel pour documenter votre projet **Opération Nexus Virtualis**. Ce README suit les bonnes pratiques GitHub et propose une navigation claire par sections. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_73e1d015-dd53-4707-8c20-ed783dfcc568/17c49540-02eb-43d3-b722-e89751c827f5/Operation-Nexus-Virtualis.pdf)
-
-***
-
 # 🚀 Opération Nexus Virtualis
-
-[
-[
-[
 
 > **Mission d'exploration avancée des hyperviseurs de type 1 : VMware ESXi, Microsoft Hyper-V, Proxmox VE et XCP-ng**
 
@@ -470,5 +462,6 @@ Made with ❤️ and ☕ | © 2026
 </div>
 
 ***
+
 
 Ce README est accompagné d'une documentation détaillée pour chaque job dans le dossier `/docs/`. Consultez les liens ci-dessus pour guides complets, captures d'écran et scripts.
